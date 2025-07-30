@@ -1,0 +1,1732 @@
+<!DOCTYPE html>
+<html lang="en-US">
+	<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta charset="utf-8" />
+		<title>
+		</title>
+		<style>
+			body { font-family:'Times New Roman'; font-size:12pt }
+			p { margin:0pt }
+@media (max-width: 900px) { 
+img { 
+   max-width: 100%;
+   height: auto;
+}
+
+.table-container {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+td, th {
+    padding: 8px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+}	
+
+
+		</style>
+	</head>
+	<body>
+			<p>
+				&lt;!DOCTYPE html&gt;
+			</p>
+			<p>
+				&lt;html lang="en"&gt;
+			</p>
+			<p>
+				&lt;head&gt;
+			</p>
+			<p>
+				&#xa0; &lt;meta charset="UTF-8" /&gt;
+			</p>
+			<p>
+				&#xa0; &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"/&gt;
+			</p>
+			<p>
+				&#xa0; &lt;title&gt;Rehab Junction&lt;/title&gt;
+			</p>
+			<p>
+				&#xa0; &lt;link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&amp;display=swap" rel="stylesheet" /&gt;
+			</p>
+			<p>
+				&#xa0; &lt;style&gt;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0; body {
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; margin: 0;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; font-family: 'Montserrat', sans-serif;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; background: #f9f9f9;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; color: #333;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; max-width: 1400px;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; margin-left: auto;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; margin-right: auto;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; scroll-behavior: smooth; /* smooth scrolling */
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0; }
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0; header {
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; background: #0d253f;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; color: #fff;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; padding: 1.5rem 2rem;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; text-align: center;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0; }
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0; header h1 {
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; margin: 0;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; font-size: 2.2rem;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0; }
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0; nav {
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; display: flex;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; justify-content: center;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; align-items: center;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; gap: 2rem;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; margin-top: 1rem;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0; }
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0; nav a {
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; color: #fff;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; text-decoration: none;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; font-weight: 500;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0; }
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0; nav a:hover {
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; text-decoration: underline;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0; }
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0; .book-btn {
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; background: #ff9800;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; color: white;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; padding: 0.6rem 1.2rem;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; border-radius: 8px;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; font-weight: 600;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; text-decoration: none;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; transition: background 0.3s ease;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0; }
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0; .book-btn:hover {
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; background: #e68900;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0; }
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0; /* Hero section */
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0; .hero {
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; position: relative;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; color: white;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; text-align: center;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; padding: 6rem 2rem;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; overflow: hidden;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0; }
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0; .hero img {
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; position: absolute;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; top: 0;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; left: 0;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; width: 100%;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; height: 100%;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; object-fit: cover;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; z-index: -1;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; filter: brightness(0.6);
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0; }
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0; .hero h2 {
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; font-size: 2.5rem;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; margin: 0;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; position: relative;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; z-index: 1;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0; }
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0; .hero p {
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; font-size: 1.2rem;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; margin-top: 1rem;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; position: relative;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; z-index: 1;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0; }
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0; section {
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; padding: 3rem 2rem;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; max-width: 1100px;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; margin: auto;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0; }
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0; .about-card {
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; background: white;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; padding: 25px;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; border-radius: 12px;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; transition: transform 0.3s ease, box-shadow 0.3s ease;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; display: flex;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; flex-direction: column;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; align-items: center;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; text-align: center;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0; }
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0; .about-card:hover {
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; transform: translateY(-10px);
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0; }
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0; footer {
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; background: #0d253f;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; color: white;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; text-align: center;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; padding: 2rem;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0; }
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0; footer p {
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; margin: .5rem 0;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0; }
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0; /* Testimonials */
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0; #testimonials {
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; background: #ffffff;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; padding: 60px 20px;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0; }
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0; .testimonial-container {
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; max-width: 1200px;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; margin: auto;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; overflow: hidden;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; position: relative;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0; }
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0; .testimonial-slider {
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; display: flex;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; /* Removed transition because animation handles movement */
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; will-change: transform;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; animation: slideLeft 30s linear infinite;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0; }
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0; .testimonial {
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; flex: 0 0 33.3333%;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; box-sizing: border-box;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; padding: 20px;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; text-align: center;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; border: 1px solid #ddd;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; margin: 0 10px;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; border-radius: 10px;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; background-color: #f8f8f8;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0; }
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0; .testimonial p {
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; font-size: 1.1rem;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; line-height: 1.6;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; color: #333;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; font-style: italic;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; margin: 0 auto 15px auto;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; max-width: 90%;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; min-height: 90px;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0; }
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0; .testimonial h4 {
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; margin-top: 0;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; color: #0073e6;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; font-weight: 600;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0; }
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0; @media (max-width: 900px) {
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; .testimonial {
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; flex: 0 0 50%;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; }
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0; }
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0; @media (max-width: 600px) {
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; .testimonial {
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; flex: 0 0 100%;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; margin: 0 0 20px 0;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; }
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0; }
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0; /* Services */
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0; .service-card {
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; background: white;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; border-radius: 12px;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; overflow: hidden;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; cursor: pointer;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; transition: transform 0.3s;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0; }
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0; .service-card:hover {
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; transform: scale(1.02);
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0; }
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0; .service-header {
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; height: 120px;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; display: flex;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; align-items: center;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; justify-content: center;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; color: white;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; text-align: center;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0; }
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0; .service-header h3 {
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; font-size: 1.2rem;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; margin: 0;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0; }
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0; .gradient1 { background: linear-gradient(135deg, #003366, #0055aa); }
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0; .gradient2 { background: linear-gradient(135deg, #006633, #00aa55); }
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0; .gradient3 { background: linear-gradient(135deg, #660033, #aa0055); }
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0; .gradient4 { background: linear-gradient(135deg, #884400, #cc6600); }
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0; .gradient5 { background: linear-gradient(135deg, #444444, #777777); }
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0; .gradient6 { background: linear-gradient(135deg, #663399, #9966cc); }
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0; .service-desc {
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; max-height: 0;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; overflow: hidden;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; transition: max-height 0.5s ease, padding 0.3s ease;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; padding: 0 20px;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; line-height: 1.6;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; color: #333;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0; }
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0; .service-desc.open {
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; max-height: 500px;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; padding: 20px;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0; }
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0; #about &gt; div &gt; div:nth-child(3) &gt; div {
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; display: flex !important;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; flex-wrap: nowrap !important;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; justify-content: center;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; gap: 30px !important;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; max-width: none !important;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0; }
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0; .about-card {
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; min-width: 250px;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; max-width: 280px;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0; }
+			</p>
+			<p>
+				&#xa0;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0; @keyframes slideLeft {
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; 0% {
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; transform: translateX(0);
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; }
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; 100% {
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; transform: translateX(-50%);
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; }
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0; }
+			</p>
+			<p>
+				&#xa0; &lt;/style&gt;
+			</p>
+			<p>
+				&#xa0; &lt;script&gt;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0; function toggleService(id) {
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; document.querySelectorAll(".service-desc").forEach(desc =&gt; {
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; if (desc.id === id) {
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; desc.classList.toggle("open");
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; } else {
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; desc.classList.remove("open");
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; }
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; });
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0; }
+			</p>
+			<p>
+				&#xa0; &lt;/script&gt;
+			</p>
+			<p>
+				&lt;/head&gt;
+			</p>
+			<p>
+				&lt;body&gt;
+			</p>
+			<p>
+				&#xa0; 
+			</p>
+			<p>
+				&#xa0; &lt;header&gt;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0; &lt;h1&gt;Rehab Junction&lt;/h1&gt;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0; &lt;nav&gt;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;a href="#about"&gt;About&lt;/a&gt;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;a href="#services"&gt;Services&lt;/a&gt;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;a href="#contact"&gt;Contact&lt;/a&gt;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;a href="https://docs.google.com/forms/d/e/1FAIpQLSd1kQ5VM66o6n_uBrt66WEQNSFvCiTFccxM7XpMcNCYByiTWA/viewform?embedded=true" target="_blank" class="book-btn"&gt;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; Book Now
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;/a&gt;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0; &lt;/nav&gt;
+			</p>
+			<p>
+				&#xa0; &lt;/header&gt;
+			</p>
+			<p>
+				&#xa0; 
+			</p>
+			<p>
+				&#xa0; &lt;!-- Hero Section --&gt;
+			</p>
+			<p>
+				&#xa0; &lt;section class="hero"&gt;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0; &lt;img src="https://images.unsplash.com/photo-1605296867304-46d5465a13f1?fit=crop&amp;w=1600&amp;q=80" alt="Rehab therapy" loading="lazy" /&gt;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0; &lt;h2&gt;Your Path to Recovery Starts Here&lt;/h2&gt;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0; &lt;p&gt;Professional rehabilitation and massage therapy tailored to your needs.&lt;/p&gt;
+			</p>
+			<p>
+				&#xa0; &lt;/section&gt;
+			</p>
+			<p>
+				&#xa0;
+			</p>
+			<p>
+				&#xa0; &lt;section id="about" style="padding: 60px 20px; background: #f4f7fb;"&gt;
+			</p>
+			<p>
+				&#xa0; &lt;div style="max-width: 1000px; margin: auto; text-align: center;"&gt;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0; &lt;h2 style="font-size: 2.2rem; margin-bottom: 20px; color: #003366;"&gt;About Rehab Junction&lt;/h2&gt;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0; &lt;p style="font-size: 1.1rem; line-height: 1.8; margin-bottom: 30px; color: #333;"&gt;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; At &lt;strong&gt;Rehab Junction&lt;/strong&gt;, we are dedicated to helping you regain movement, reduce pain, and 
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; achieve lasting recovery. Offering both &lt;strong&gt;mobile services&lt;/strong&gt; in the comfort of your home 
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; and &lt;strong&gt;treatments at our office&lt;/strong&gt;, we provide flexibility and expert care tailored to your needs.
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0; &lt;/p&gt;
+			</p>
+			<p>
+				&#xa0;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0; &lt;p style="font-size: 1.1rem; line-height: 1.8; margin-bottom: 40px; color: #333;"&gt;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; Whether you’re recovering from a sports injury, dealing with chronic pain, or simply want to 
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; improve your overall wellbeing, we create personalised programs designed to help you 
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; move better, feel stronger, and live without limitations.
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0; &lt;/p&gt;
+			</p>
+			<p>
+				&#xa0;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0; &lt;!-- Why Choose Us Section --&gt;
+			</p>
+			<p>
+				&#xa0;&lt;section id="about" style="padding: 60px 20px; background: #f4f7fb;"&gt;
+			</p>
+			<p>
+				&#xa0; &lt;div style="max-width: 1200px; margin: auto; text-align: center;"&gt;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0; &lt;h2 style="font-size: 2.2rem; margin-bottom: 20px; color: #003366;"&gt;Why Choose Rehab Junction?&lt;/h2&gt;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0; &lt;p style="font-size: 1.1rem; line-height: 1.8; margin-bottom: 40px; color: #333;"&gt;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; Discover what sets us apart and why our clients trust us to guide their journey to recovery:
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0; &lt;/p&gt;
+			</p>
+			<p>
+				&#xa0;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0; &lt;div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px;"&gt;
+			</p>
+			<p>
+				&#xa0;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;div style="display: flex; gap: 30px; flex-wrap: nowrap; justify-content: center;"&gt;
+			</p>
+			<p>
+				&#xa0; &lt;!-- Feature 1 --&gt;
+			</p>
+			<p>
+				&#xa0; &lt;div class="about-card" style="background: white; padding: 25px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); transition: transform 0.3s ease, box-shadow 0.3s ease;"&gt;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0; &lt;img src="https://img.icons8.com/color/96/ambulance.png" alt="Mobile Care" style="width:70px; margin-bottom:15px;"&gt;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0; &lt;h3 style="color: #0073e6;"&gt;Mobile &amp; In-Office Care&lt;/h3&gt;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0; &lt;p style="margin-top:15px; color:#555; font-size:0.95rem; line-height:1.6;"&gt;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; Receive professional rehabilitation in your own home or visit us at our fully equipped office.
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0; &lt;/p&gt;
+			</p>
+			<p>
+				&#xa0; &lt;/div&gt;
+			</p>
+			<p>
+				&#xa0; 
+			</p>
+			<p>
+				&#xa0; &lt;!-- Feature 2 --&gt;
+			</p>
+			<p>
+				&#xa0; &lt;div class="about-card" style="background: white; padding: 25px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); transition: transform 0.3s ease, box-shadow 0.3s ease;"&gt;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0; &lt;img src="https://img.icons8.com/color/96/task.png" alt="Treatment Plans" style="width:70px; margin-bottom:15px;"&gt;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0; &lt;h3 style="color: #0073e6;"&gt;Personalised Plans&lt;/h3&gt;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0; &lt;p style="margin-top:15px; color:#555; font-size:0.95rem; line-height:1.6;"&gt;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; Every treatment is tailored to your specific goals, ensuring the best and fastest recovery.
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0; &lt;/p&gt;
+			</p>
+			<p>
+				&#xa0; &lt;/div&gt;
+			</p>
+			<p>
+				&#xa0; 
+			</p>
+			<p>
+				&#xa0; &lt;!-- Feature 3 --&gt;
+			</p>
+			<p>
+				&#xa0; &lt;div class="about-card" style="background: white; padding: 25px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); transition: transform 0.3s ease, box-shadow 0.3s ease;"&gt;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0; &lt;img src="https://img.icons8.com/color/96/microscope.png" alt="Evidence Based" style="width:70px; margin-bottom:15px;"&gt;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0; &lt;h3 style="color: #0073e6;"&gt;Evidence-Based Techniques&lt;/h3&gt;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0; &lt;p style="margin-top:15px; color:#555; font-size:0.95rem; line-height:1.6;"&gt;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; We use proven rehabilitation and therapy methods backed by clinical research.
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0; &lt;/p&gt;
+			</p>
+			<p>
+				&#xa0; &lt;/div&gt;
+			</p>
+			<p>
+				&#xa0; 
+			</p>
+			<p>
+				&#xa0; &lt;!-- Feature 4 --&gt;
+			</p>
+			<p>
+				&#xa0; &lt;div class="about-card" style="background: white; padding: 25px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); transition: transform 0.3s ease, box-shadow 0.3s ease;"&gt;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0; &lt;img src="https://img.icons8.com/color/96/dumbbell.png" alt="Recovery" style="width:70px; margin-bottom:15px;"&gt;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0; &lt;h3 style="color: #0073e6;"&gt;Focus on Long-Term Recovery&lt;/h3&gt;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0; &lt;p style="margin-top:15px; color:#555; font-size:0.95rem; line-height:1.6;"&gt;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; Our goal is not just short-term relief but lasting improvements in your health and mobility.
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0; &lt;/p&gt;
+			</p>
+			<p>
+				&#xa0; &lt;/div&gt;
+			</p>
+			<p>
+				&lt;/div&gt;
+			</p>
+			<p>
+				&#xa0;
+			</p>
+			<p>
+				&#xa0;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0; &lt;/div&gt;
+			</p>
+			<p>
+				&#xa0; &lt;/div&gt;
+			</p>
+			<p>
+				&lt;/section&gt;
+			</p>
+			<p>
+				&#xa0;
+			</p>
+			<p>
+				&#xa0;
+			</p>
+			<p>
+				&lt;style&gt;
+			</p>
+			<p>
+				&#xa0; .about-card:hover {
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0; transform: translateY(-10px);
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0; box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+			</p>
+			<p>
+				&#xa0; }
+			</p>
+			<p>
+				&lt;/style&gt;
+			</p>
+			<p>
+				&#xa0;
+			</p>
+			<p>
+				&#xa0;
+			</p>
+			<p>
+				&lt;style&gt;
+			</p>
+			<p>
+				&#xa0; .about-card:hover {
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0; transform: translateY(-10px);
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0; box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+			</p>
+			<p>
+				&#xa0; }
+			</p>
+			<p>
+				&lt;/style&gt;
+			</p>
+			<p>
+				&#xa0;
+			</p>
+			<p>
+				&#xa0;
+			</p>
+			<p>
+				&#xa0; 
+			</p>
+			<p>
+				&lt;!-- Services Section --&gt;
+			</p>
+			<p>
+				&lt;section id="services" class="services" style="padding: 40px; background: #f9f9f9;"&gt;
+			</p>
+			<p>
+				&#xa0; &lt;h2 style="text-align: center; margin-bottom: 30px; color: #003366;"&gt;Our Services&lt;/h2&gt;
+			</p>
+			<p>
+				&#xa0;
+			</p>
+			<p>
+				&#xa0; &lt;div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px;"&gt;
+			</p>
+			<p>
+				&#xa0;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0; &lt;!-- Service 1 --&gt;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0; &lt;div class="service-card" onclick="toggleService('massage')"&gt;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;div class="service-header gradient1"&gt;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;h3&gt;Sports Massage&lt;/h3&gt;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;/div&gt;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;div id="massage" class="service-desc"&gt;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;p&gt;Our sports massage therapy targets muscles, ligaments, and tendons to alleviate pain, enhance blood flow, and accelerate healing. Using advanced techniques, we focus on reducing muscular tension and promoting overall physical recovery.&lt;/p&gt;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;strong&gt;Key Benefits:&lt;/strong&gt;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;ul&gt;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;li&gt;Effective pain and muscle tension relief&lt;/li&gt;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;li&gt;Enhanced circulation and nutrient delivery&lt;/li&gt;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;li&gt;Accelerated recovery from athletic exertion&lt;/li&gt;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;li&gt;Improved relaxation and stress management&lt;/li&gt;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;/ul&gt;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;/div&gt;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0; &lt;/div&gt;
+			</p>
+			<p>
+				&#xa0;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0; &lt;!-- Service 2 --&gt;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0; &lt;div class="service-card" onclick="toggleService('therapy')"&gt;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;div class="service-header gradient2"&gt;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;h3&gt;Sports Therapy&lt;/h3&gt;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;/div&gt;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;div id="therapy" class="service-desc"&gt;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;p&gt;Our sports therapy program combines evidence-based techniques such as trigger point therapy and soft tissue mobilisation to effectively treat musculoskeletal injuries, reduce pain, and restore function, tailored to each athlete’s needs.&lt;/p&gt;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;strong&gt;Conditions Treated:&lt;/strong&gt;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;ul&gt;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;li&gt;Muscle strains and tears&lt;/li&gt;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;li&gt;Repetitive strain injuries&lt;/li&gt;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;li&gt;Joint stiffness and mobility limitations&lt;/li&gt;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;li&gt;Comprehensive pain management&lt;/li&gt;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;/ul&gt;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;/div&gt;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0; &lt;/div&gt;
+			</p>
+			<p>
+				&#xa0;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0; &lt;!-- Service 3 --&gt;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0; &lt;div class="service-card" onclick="toggleService('spinal')"&gt;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;div class="service-header gradient3"&gt;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;h3&gt;Spinal Joint Mobilisation&lt;/h3&gt;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;/div&gt;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;div id="spinal" class="service-desc"&gt;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;p&gt;Using precise mobilisation and manipulation techniques, we restore optimal joint movement, reduce stiffness, and alleviate spinal discomfort. This service improves flexibility, enhances neuromuscular function, and supports long-term spinal health.&lt;/p&gt;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;/div&gt;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0; &lt;/div&gt;
+			</p>
+			<p>
+				&#xa0;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0; &lt;!-- Service 4 --&gt;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0; &lt;div class="service-card" onclick="toggleService('assessment')"&gt;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;div class="service-header gradient4"&gt;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;h3&gt;Clinical Joint Assessment&lt;/h3&gt;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;/div&gt;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;div id="assessment" class="service-desc"&gt;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;p&gt;Our comprehensive clinical joint assessment evaluates joint movement, strength, and ligament integrity using advanced diagnostic tools to identify underlying issues, enabling us to develop personalized, targeted treatment plans.&lt;/p&gt;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;/div&gt;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0; &lt;/div&gt;
+			</p>
+			<p>
+				&#xa0;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0; &lt;!-- Service 5 --&gt;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0; &lt;div class="service-card" onclick="toggleService('rehab')"&gt;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;div class="service-header gradient5"&gt;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;h3&gt;Injury Rehabilitation&lt;/h3&gt;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;/div&gt;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;div id="rehab" class="service-desc"&gt;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;p&gt;We offer structured rehabilitation programs designed to promote healing, restore mobility, and strengthen injured areas. Our multidisciplinary approach focuses on pain management, functional recovery, and preventing future injury.&lt;/p&gt;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;strong&gt;Program Highlights:&lt;/strong&gt;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;ul&gt;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;li&gt;Accelerated return to athletic performance&lt;/li&gt;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;li&gt;Reduction of pain and inflammation&lt;/li&gt;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;li&gt;Enhanced flexibility, balance, and coordination&lt;/li&gt;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;li&gt;Individually tailored rehabilitation plans&lt;/li&gt;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;/ul&gt;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;/div&gt;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0; &lt;/div&gt;
+			</p>
+			<p>
+				&#xa0;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0; &lt;!-- Service 6 --&gt;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0; &lt;div class="service-card" onclick="toggleService('exercise')"&gt;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;div class="service-header gradient6"&gt;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;h3&gt;Exercise Therapy&lt;/h3&gt;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;/div&gt;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;div id="exercise" class="service-desc"&gt;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;p&gt;Our personalized exercise therapy programs combine strength training, flexibility exercises, balance improvement, and sport-specific drills to optimize performance, prevent injury, and support long-term musculoskeletal health.&lt;/p&gt;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;/div&gt;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0; &lt;/div&gt;
+			</p>
+			<p>
+				&#xa0;
+			</p>
+			<p>
+				&#xa0; &lt;/div&gt;
+			</p>
+			<p>
+				&lt;/section&gt;
+			</p>
+			<p>
+				&#xa0;
+			</p>
+			<p>
+				&lt;style&gt;
+			</p>
+			<p>
+				&#xa0; .service-card {
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0; background: white;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0; border-radius: 12px;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0; overflow: hidden;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0; box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0; cursor: pointer;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0; transition: transform 0.3s;
+			</p>
+			<p>
+				&#xa0; }
+			</p>
+			<p>
+				&#xa0; .service-card:hover {
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0; transform: scale(1.02);
+			</p>
+			<p>
+				&#xa0; }
+			</p>
+			<p>
+				&#xa0;
+			</p>
+			<p>
+				&#xa0; .service-header {
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0; height: 120px;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0; display: flex;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0; align-items: center;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0; justify-content: center;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0; color: white;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0; text-align: center;
+			</p>
+			<p>
+				&#xa0; }
+			</p>
+			<p>
+				&#xa0;
+			</p>
+			<p>
+				&#xa0; .service-header h3 {
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0; font-size: 1.2rem;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0; margin: 0;
+			</p>
+			<p>
+				&#xa0; }
+			</p>
+			<p>
+				&#xa0;
+			</p>
+			<p>
+				&#xa0; /* Different Gradient Colors */
+			</p>
+			<p>
+				&#xa0; .gradient1 { background: linear-gradient(135deg, #003366, #0055aa); }
+			</p>
+			<p>
+				&#xa0; .gradient2 { background: linear-gradient(135deg, #006633, #00aa55); }
+			</p>
+			<p>
+				&#xa0; .gradient3 { background: linear-gradient(135deg, #660033, #aa0055); }
+			</p>
+			<p>
+				&#xa0; .gradient4 { background: linear-gradient(135deg, #884400, #cc6600); }
+			</p>
+			<p>
+				&#xa0; .gradient5 { background: linear-gradient(135deg, #444444, #777777); }
+			</p>
+			<p>
+				&#xa0; .gradient6 { background: linear-gradient(135deg, #663399, #9966cc); }
+			</p>
+			<p>
+				&#xa0;
+			</p>
+			<p>
+				&#xa0; .service-desc {
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0; max-height: 0;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0; overflow: hidden;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0; transition: max-height 0.5s ease, padding 0.3s ease;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0; padding: 0 20px;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0; line-height: 1.6;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0; color: #333;
+			</p>
+			<p>
+				&#xa0; }
+			</p>
+			<p>
+				&#xa0;
+			</p>
+			<p>
+				&#xa0; .service-desc.open {
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0; max-height: 700px;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0; padding: 20px;
+			</p>
+			<p>
+				&#xa0; }
+			</p>
+			<p>
+				&lt;/style&gt;
+			</p>
+			<p>
+				&#xa0;
+			</p>
+			<p>
+				&lt;script&gt;
+			</p>
+			<p>
+				&#xa0; function toggleService(id) {
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0; document.querySelectorAll(".service-desc").forEach(desc =&gt; {
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; if (desc.id === id) {
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; desc.classList.toggle("open");
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; } else {
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; desc.classList.remove("open");
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; }
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0; });
+			</p>
+			<p>
+				&#xa0; }
+			</p>
+			<p>
+				&lt;/script&gt;
+			</p>
+			<p>
+				&#xa0;
+			</p>
+			<p>
+				&#xa0;
+			</p>
+			<p>
+				&#xa0; &lt;section id="testimonials"&gt;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0; &lt;h2&gt;What Our Clients Say&lt;/h2&gt;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0; &lt;div class="testimonial-container"&gt;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;div class="testimonial-slider" id="testimonial-slider"&gt;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;div class="testimonial"&gt;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;p&gt;"Raf helped me recover from my knee injury faster than I expected. The mobile service was so convenient!"&lt;/p&gt;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;h4&gt;Sylwia L.&lt;/h4&gt;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;/div&gt;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;div class="testimonial"&gt;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;p&gt;"I felt genuinely cared for throughout my rehab journey. A combination of rehab programme and manual therapy relieved me from chronic pain in upper back, shoulders and neck. Highly recommend Raf as a Physiotherapist."&lt;/p&gt;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;h4&gt;David K.&lt;/h4&gt;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;/div&gt;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;div class="testimonial"&gt;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;p&gt;"Professional and friendly. As an office worker I finally got rid of my migraines! The mobile visits fit perfectly into my busy schedule."&lt;/p&gt;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;h4&gt;Linda S.&lt;/h4&gt;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;/div&gt;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;div class="testimonial"&gt;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;p&gt;"The therapist is knowledgeable and kind. The massage sessions helped relieve my chronic back pain."&lt;/p&gt;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;h4&gt;Tomek B.&lt;/h4&gt;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;/div&gt;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;div class="testimonial"&gt;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;p&gt;"I appreciate the personalised rehab plans tailored to my sports injury. I’m back on the field stronger than ever."&lt;/p&gt;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;h4&gt;Emily R.&lt;/h4&gt;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;/div&gt;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;div class="testimonial"&gt;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;p&gt;"Excellent care and attention. The exercises Raf recommended really improved my mobility and pain levels."&lt;/p&gt;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;h4&gt;James T.&lt;/h4&gt;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;/div&gt;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;/div&gt;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0; &lt;/div&gt;
+			</p>
+			<p>
+				&#xa0; &lt;/section&gt;
+			</p>
+			<p>
+				&#xa0;
+			</p>
+			<p>
+				&#xa0;&lt;!-- Footer --&gt;
+			</p>
+			<p>
+				&#xa0; &lt;footer id="contact" style="background: #0d253f; color: white; text-align: center; padding: 1.5rem 2rem; font-family: 'Montserrat', sans-serif;"&gt;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0; &lt;p style="margin: 0.2rem 0; font-weight: 600; font-size: 1rem;"&gt;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; Opening Hours: &lt;span style="font-weight: 400;"&gt;Mon–Fri: 5pm – 9pm | Sat: 9am – 5pm&lt;/span&gt;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0; &lt;/p&gt;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0; &lt;p style="margin: 0.2rem 0; font-size: 1rem;"&gt;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; Contact us at 
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;a href="mailto:<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="0a786f626b68607f64697e636564736578614a6d676b636624696567">[email&#160;protected]</a>" style="color: #ff9800; text-decoration: none;"&gt;<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="f280979a939098879c91869b9d9c8b9d8099b2959f939b9edc919d9f">[email&#160;protected]</a>&lt;/a&gt; 
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; or call: &lt;a href="tel:07477593373" style="color: #ff9800; text-decoration: none;"&gt;07477593373&lt;/a&gt;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0; &lt;/p&gt;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0; &lt;p style="margin: 0.5rem 0 0 0; font-size: 0.9rem; color: #bbb;"&gt;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &amp;copy; 2025 Rehab Junction. All rights reserved.
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0; &lt;/p&gt;
+			</p>
+			<p>
+				&#xa0; &lt;/footer&gt;
+			</p>
+			<p>
+				&#xa0;
+			</p>
+			<p>
+				&#xa0; &lt;script&gt;
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0; // Duplicate testimonials for seamless continuous scrolling
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0; window.addEventListener('DOMContentLoaded', () =&gt; {
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; const slider = document.getElementById('testimonial-slider');
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; const testimonials = Array.from(slider.children);
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; testimonials.forEach(node =&gt; {
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; const clone = node.cloneNode(true);
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; slider.appendChild(clone);
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; });
+			</p>
+			<p>
+				&#xa0;&#xa0;&#xa0; });
+			</p>
+			<p>
+				&#xa0; &lt;/script&gt;
+			</p>
+			<p>
+				&#xa0;
+			</p>
+			<p>
+				&lt;/body&gt;
+			</p>
+			<p>
+				&lt;/html&gt;
+			</p>
+			<p>
+				&#xa0;
+			</p>
+	<p style="bottom: 10px; right: 10px; position: absolute;"><a href="https://wordtohtml.net" target="_blank" style="font-size:11px; color: #d0d0d0">Converted to HTML with WordToHTML.net</a></p>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script></body>
+</html>
